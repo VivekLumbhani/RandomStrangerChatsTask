@@ -17,6 +17,10 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'migration' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => '@app/migrations', // Adjust this path to where your migrations are located
+        ],
         'log' => [
             'targets' => [
                 [
